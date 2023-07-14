@@ -7,9 +7,8 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background-color: #068100; /* Este es un verde vibrante */
+    background-color: #56e14fe6; /* Este es un verde vibrante */
 }
-
 header img {
     width: 200px;
     height: auto;
@@ -38,8 +37,8 @@ input {
 }
 
 button {
-    background-color: #068100; /* Este es un verde brillante */
-    border: none;
+    background-color: #1c2331; /* Este es un verde brillante */
+    border: 1px solid  #56e14fe6 ;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
@@ -48,6 +47,11 @@ button {
     margin: 38px 2px;
     cursor: pointer;
     border-radius: 18px;
+}
+
+button:hover {
+    background-color: #56e14fe6; /* Este es un verde brillante */
+    color: #FFFFFF;
 }
 
 #resultArea {
