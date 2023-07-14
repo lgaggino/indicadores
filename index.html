@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="www/logo.png" alt="logo">
+    </header>
+    <form id="searchForm">
+        <label for="searchInput">Ingresá una palabra clave</label>
+        <input type="search" id="searchInput" placeholder="Ingresá una palabra clave...">
+        <label for="categorySelect">ó elegí una Categoría</label>
+        <select id="categorySelect">
+            <!-- Las categorías serán añadidas desde el script -->
+        </select>
+        <button type="submit">Buscar</button>
+    </form>
+    <main id="resultArea">
+        <!-- Aquí se imprimirán los resultados de la búsqueda -->
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

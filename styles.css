@@ -1,0 +1,65 @@
+body {
+    background-color: #141414;
+    color: #808080; /* Color gris para el texto */
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #068100; /* Este es un verde vibrante */
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+form {
+    margin: 102px auto;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 18px;
+    color: #808080; /* Color gris para el texto */
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    margin-bottom: 54px;
+}
+
+button {
+    background-color: #068100; /* Este es un verde brillante */
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 38px 2px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+#resultArea {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+form label {
+    color: #FFFFFF; /* Mantener el texto antes de los objetos en color blanco */
+}
+
+#categorySelect option:first-child {
+    font-style: italic; /* Aplicar formato itálico al primer ítem del desplegable */
+}
