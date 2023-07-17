@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $('#searchForm').submit(function(e) {
         e.preventDefault();
-        var keyword = $('#searchInput').val();
+        var keyword = $('#searchInput').val().toLowerCase();
         var category = $('#categorySelect').val();
         var alertMessage = '';
         if (keyword == "" && category == "") {
@@ -29,26 +29,35 @@ $(document).ready(function() {
             alert(alertMessage);
             return;
         }
-
+    
         $.getJSON('https://deissms.github.io/leyes_especiales_m/base_series.json', function(data) {
             $('#resultArea').empty();
+            var resultsCount = 0;
             data.forEach(function(item) {
-                if (category == 'all' || item.organismo == category) {
+                if ((category == 'all' || item.organismo == category) && 
+                    (item.descripcion_serie.toLowerCase().includes(keyword) || item.organismo.toLowerCase().includes(keyword))) {
                     $('#resultArea').append(
-                        '<div>' + 
-                        '<h3>Fuente: ' + item.fuente + '</h3>' +
+                        '<div class="resultItem">' + 
+                        '<h3>' + item.descripcion_serie + '</h3>' +
                         '<p>Organismo: ' + item.organismo + '</p>' +
-                        '<p>Serie: ' + item.descripcion_serie + '</p>' +
+                        '<p>Fuente: ' + item.fuente + '</p>' +
                         '<p>Unidad de Medida: ' + item.unidad_de_medida + '</p>' +
                         '<p>Periodicidad: ' + item.periodicidad + '</p>' +
                         '<p>Desestacionalizado: ' + item.desestacionalizada + '</p>' +
                         '<p>Tipo de Resumen: ' + item.tipo_de_resumen + '</p>' +
                         '<p>Fecha de último dato: ' + item.fecha_ult_dato + '</p>' +
-                        '<p><a href="' + item.link_de_la_fuente + '" target="_blank">Link a la fuente</a></p>' +
                         '</div>'
                     );
+                    resultsCount++;
                 }
             });
+            if(resultsCount > 0){
+                var resultsText = resultsCount > 1 ? "Resultados encontrados: " : "Resultado encontrado: ";
+                $('#resultArea').prepend('<p id="resultsCount" style="color: #E156A6; font-family: Poppins;">' + resultsText + resultsCount + '</p>');
+            } else {
+                alert("Ningún resultado encontrado. Hacé otra búsqueda");
+                document.getElementById("searchForm").reset();  // Añadimos esta línea para resetear el formulario
+            }
         });
     });
 });

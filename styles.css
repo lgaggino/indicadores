@@ -1,13 +1,17 @@
+/* Principal: #56e14fe6
+Grises #808080, #1c2331, #FFFFFF, #141414
+Secundarios: #E18956, #56BCE1, #E156A6, #8E56E1, #56E1A2 */
+
 body {
     background-color: #141414;
-    color: #808080; /* Color gris para el texto */
+    color: #808080;
     font-family: 'Lato', sans-serif;
 }
 
 header {
     padding: 20px;
     text-align: center;
-    background-color: #56e14fe6; /* Este es un verde vibrante */
+    background-color: #56e14fe6;
 }
 header img {
     width: 200px;
@@ -28,7 +32,7 @@ input, select, button {
     padding: 10px;
     width: 100%;
     border-radius: 18px;
-    color: #808080; /* Color gris para el texto */
+    color: #808080;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -37,8 +41,8 @@ input {
 }
 
 button {
-    background-color: #1c2331; /* Este es un verde brillante */
-    border: 1px solid  #56e14fe6 ;
+    background-color: #1c2331;
+    border: 1px solid #E156A6  ;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
@@ -50,8 +54,9 @@ button {
 }
 
 button:hover {
-    background-color: #56e14fe6; /* Este es un verde brillante */
-    color: #FFFFFF;
+    background-color: #56E1A2;
+    color: #1c2331;
+    border: none;
 }
 
 #resultArea {
@@ -61,9 +66,53 @@ button:hover {
 }
 
 form label {
-    color: #FFFFFF; /* Mantener el texto antes de los objetos en color blanco */
+    color: #FFFFFF;
 }
 
 #categorySelect option:first-child {
-    font-style: italic; /* Aplicar formato itálico al primer ítem del desplegable */
+    font-style: italic;
+}
+
+.resultItem {
+    border-bottom: 1px solid #E156A6;
+    padding-bottom: 20px; 
+    margin-bottom: 20px;
+}
+
+.resultItem a {
+    font-family: 'Poppins', sans-serif;
+    color: #808080;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none; /* esto elimina el subrayado que suelen tener los enlaces */
+}
+
+.resultItem a:hover {
+    color: #56E1A2;
+}
+
+input[type=search], select {
+    border: 2.2px solid #56e14fe6;
+}
+
+input[type=search]:hover, select:hover {
+    border-color: #141414; 
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.more-info {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
 }
