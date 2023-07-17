@@ -13,7 +13,8 @@
   "unidad_de_medida": "Pesos corrientes",
   "tipo_de_resumen": "Promedio",
   "fecha_ult_dato": "Dec-22",
-  "Column14": ""
+  "ruta": "",
+  "proximo_dato": "22-Oct"
  },
  {
   "id_serie": 2,
@@ -28,7 +29,8 @@
   "desestacionalizada": "Si",
   "unidad_de_medida": "Pesos corrientes",
   "tipo_de_resumen": "Promedio",
-  "fecha_ult_dato": "Dec-22"
+  "fecha_ult_dato": "Dec-22",
+  "proximo_dato": "13-Jun"
  },
  {
   "id_serie": 3,
@@ -43,7 +45,8 @@
   "desestacionalizada": "No",
   "unidad_de_medida": "Personas",
   "tipo_de_resumen": "Suma",
-  "fecha_ult_dato": "Feb-23"
+  "fecha_ult_dato": "Feb-23",
+  "proximo_dato": "09-Dec"
  },
  {
   "id_serie": 4,
@@ -58,6 +61,7 @@
   "desestacionalizada": "Si",
   "unidad_de_medida": "Personas",
   "tipo_de_resumen": "Suma",
-  "fecha_ult_dato": "Feb-23"
+  "fecha_ult_dato": "Feb-23",
+  "proximo_dato": "08-Aug"
  }
 ]
