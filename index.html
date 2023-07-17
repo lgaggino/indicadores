@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +14,28 @@
     <header>
         <img src="www/logo.png" alt="logo">
     </header>
-    <form id="searchForm">
-        <label for="searchInput">Ingresá una palabra clave</label>
-        <input type="search" id="searchInput" placeholder="Ingresá una palabra clave...">
-        <label for="categorySelect">y elegí una categoría</label>
-        <select id="categorySelect">
-            <!-- Las categorías serán añadidas desde el script -->
-        </select>
-        <button type="submit">Buscar</button>
-    </form>
+    <div id="contentWrapper">
+        <aside id="upcomingEvents">
+            <h2>Próximos Eventos</h2>
+            <div id="eventsList">
+                <!-- Aquí se mostrarán los próximos eventos -->
+            </div>
+        </aside>
+        <form id="searchForm">
+            <label for="searchInput">Ingresá una palabra clave</label>
+            <input type="search" id="searchInput" placeholder="Ingresá una palabra clave...">
+            <label for="categorySelect">y elegí una categoría</label>
+            <select id="categorySelect">
+                <!-- Las categorías serán añadidas desde el script -->
+            </select>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
     <main id="resultArea">
         <!-- Aquí se imprimirán los resultados de la búsqueda -->
     </main>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>

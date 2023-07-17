@@ -11,7 +11,7 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background-color: #56e14fe6;
+    background-color: #483042e6;
 }
 header img {
     width: 200px;
@@ -42,7 +42,7 @@ input {
 
 button {
     background-color: #1c2331;
-    border: 1px solid #E156A6  ;
+    border: 1px solid #823f71e6;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
@@ -54,7 +54,7 @@ button {
 }
 
 button:hover {
-    background-color: #56E1A2;
+    background-color: #9fef9b;
     color: #1c2331;
     border: none;
 }
@@ -88,31 +88,38 @@ form label {
 }
 
 .resultItem a:hover {
-    color: #56E1A2;
+    color: #9fef9b;
 }
 
 input[type=search], select {
-    border: 2.2px solid #56e14fe6;
+    border: 2.2px solid #823f71e6;;
 }
 
 input[type=search]:hover, select:hover {
     border-color: #141414; 
 }
 
-#modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+.resultItem h3 a:hover {
+    color: #9fef9b;
 }
 
-.more-info {
-    color: blue;
-    font-weight: bold;
-    text-decoration: underline;
+#upcomingEvents {
+    background-color: #9fef9b;
+    color: #483042e6;
+    border-bottom-right-radius: 22px;
+    padding-left: 20px;
+}
+
+#contentWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+main#resultArea {
+    flex-basis: 70%;
+}
+
+aside#upcomingEvents {
+    flex-basis: 12%;
+    background-color: #9fef9b;
 }
